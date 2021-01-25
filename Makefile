@@ -1,2 +1,2 @@
 run:
-	deno run --allow-env --allow-read src/myApp.ts
+	deno run src/myApp.ts
