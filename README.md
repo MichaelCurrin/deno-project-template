@@ -7,6 +7,13 @@
 [![Made with Deno](https://img.shields.io/badge/Deno-1-blue?logo=deno&logoColor=white)](https://deno.land)
 
 
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Use_template-Generate_project-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/deno-project-template/generate)
+
+</div>
+
+
 ## About this template
 
 This project consists of a simple JavaScript project which is run with Deno - a fast, sescure alternative to Node.js by the creator of Node.js.
@@ -14,6 +21,11 @@ This project consists of a simple JavaScript project which is run with Deno - a 
 You'll notice there's no setup of ESLint, Prettier or Jest/Jasmine as dependencies or config file. This is because Deno can lint, format and test your code without extra dependencies. It can even run and compile TypeScript without having to install TypeScript.
 
 For resources and guides to Deno, see [Deno](https://michaelcurrin.github.io/dev-resources/resources/javascript/deno/) in my Dev Resources.
+
+
+## Related projects
+
+- [![MichaelCurrin - node-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=node-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/node-project-template)
 
 
 ## Documentation
