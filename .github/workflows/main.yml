@@ -10,6 +10,8 @@ on:
 
 jobs:
   test:
+    name: Test and build app
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -32,6 +34,3 @@ jobs:
 
       - name: Build
         run: make build
-
-      - name: Run app
-        run: make run
