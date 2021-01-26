@@ -1,4 +1,3 @@
-# Newer Deno will attempt to format your markdown files.
 IGNORE = --ignore=build,docs,README.md
 
 default: upgrade
