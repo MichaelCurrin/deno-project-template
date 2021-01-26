@@ -1,2 +1,5 @@
+help:
+	@grep '^[a-z]' Makefile
+
 run:
-	deno run src/myApp.ts
+	deno run src/index.ts
