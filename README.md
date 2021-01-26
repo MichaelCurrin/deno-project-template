@@ -1,6 +1,7 @@
 # Deno Project Template
 > Starter template for a new Deno project
 
+[![Deno CI](https://github.com/MichaelCurrin/deno-project-template/workflows/Deno%20CI/badge.svg)](https://github.com/MichaelCurrin/deno-project-template/actions?query=workflow%3A%22Deno+CI%22 "GitHub Actions CI")
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/deno-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/deno-project-template/releases/)
 [![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
