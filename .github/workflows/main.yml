@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build-test:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Tests
         run: make test
+
+      - name: Build
+        run: make build
 
       - name: Run app
         run: make run
