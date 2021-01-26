@@ -15,10 +15,12 @@
 </div>
 
 
-## Sample
+## Sample usage
 
 ```sh
 $ make run
+```
+```
 Hello, dev!
 ```
 
