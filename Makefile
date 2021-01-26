@@ -11,7 +11,7 @@ upgrade:
 fmt:
 	deno fmt
 	
-fmt:check
+fmt-check:
 	deno fmt --check
 
 lint:
