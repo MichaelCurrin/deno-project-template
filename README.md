@@ -22,7 +22,7 @@ Hello, dev!
 ```
 
 
-## About this template
+## About this project
 
 This project consists of a simple JavaScript project which is run with **Deno** - a fast, sescure alternative to Node.js by the creator of Node.js.
 
