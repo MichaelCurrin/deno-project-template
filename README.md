@@ -14,9 +14,17 @@
 </div>
 
 
+## Sample
+
+```sh
+$ make run
+Hello, dev!
+```
+
+
 ## About this template
 
-This project consists of a simple JavaScript project which is run with Deno - a fast, sescure alternative to Node.js by the creator of Node.js.
+This project consists of a simple JavaScript project which is run with **Deno** - a fast, sescure alternative to Node.js by the creator of Node.js.
 
 You'll notice there's no setup of ESLint, Prettier or Jest/Jasmine as dependencies or config file. This is because Deno can lint, format and test your code without extra dependencies. It can even run and compile TypeScript without having to install TypeScript.
 
