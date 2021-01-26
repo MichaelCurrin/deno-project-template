@@ -1,5 +1,7 @@
 default: upgrade
 
+all: upgrade fmt lint test
+
 help:
 	@grep '^[a-z]' Makefile
 
@@ -9,18 +11,16 @@ upgrade:
 
 
 fmt:
-	deno fmt
-	
+	deno fmt --unstable --ignore=build
+
 fmt-check:
-	deno fmt --check
+	deno fmt --check --unstable --ignore=build
 
 lint:
-	deno lint --unstable
+	deno lint --unstable --ignore=build
 
 test:
 	deno test
-
-check: fmt lint test
 
 
 run:
