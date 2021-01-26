@@ -10,8 +10,11 @@ upgrade:
 
 fmt:
 	deno fmt
+	
+fmt:check
+	deno fmt --check
 
-l lint:
+lint:
 	deno lint --unstable
 
 test:
