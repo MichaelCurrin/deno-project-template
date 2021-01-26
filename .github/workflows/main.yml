@@ -23,12 +23,12 @@ jobs:
 
       - name: Check formatting
         run: make fmt-check
-        
+
       - name: Lint
         run: make lint
-        
+
       - name: Tests
-        run: make tests
-        
+        run: make test
+
       - name: Run app
         run: make run
