@@ -19,3 +19,9 @@ Install Deno globally using these [instuctions](https://gist.github.com/MichaelC
 ## Install project packages
 
 You don't need to install packages yourself. These will be installed when you run the application.
+
+If you need to update to the latest versions, then run:
+
+```sh
+$ make upgrade
+```
