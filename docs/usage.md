@@ -11,7 +11,7 @@ The app does a simple greeting.
 $ make run
 ```
 ```
-deno run index.ts --name ''
+deno run index.ts --name ""
 Hello, World!
 ```
 
@@ -21,7 +21,7 @@ Supply an argument to `make`.
 make run name='Deno dev'
 ```
 ```
-deno run index.ts --name 'Deno dev'
+deno run index.ts --name "Deno dev"
 Hello, Deno dev!
 ```
 
