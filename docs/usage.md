@@ -5,15 +5,48 @@ These instructions use `make` - a task runner available on Linux and macOS. If y
 
 ## Run app
 
+The app does a simple greeting.
+
 ```sh
 $ make run
+```
+```
+deno run index.ts --name ""
+Hello, World!
+```
+
+Supply an argument to `make`.
+
+```sh
+make run name='Deno dev'
+```
+```
+deno run index.ts --name "Deno dev"
+Hello, Deno dev!
 ```
 
 
 ## Run checks
 
-Run formatting, lint and unit tests.
+Format.
 
 ```sh
-$ make check
+$ make fmt
+```
+
+Lint.
+
+```sh
+$ make lint
+```
+
+Run unit tests.'
+```sh
+$ make test
+```
+
+Update dependencies and run all checks.
+
+```sh
+$ make all
 ```
