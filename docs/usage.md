@@ -40,7 +40,8 @@ Lint.
 $ make lint
 ```
 
-Run unit tests.'
+Run unit tests.
+
 ```sh
 $ make test
 ```
