@@ -26,7 +26,7 @@ test:
 
 
 run:
-	deno run index.ts --name dev
+	deno run index.ts --name "$(name)"
 
 
 clean:
