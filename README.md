@@ -21,7 +21,8 @@
 $ make run
 ```
 ```
-Hello, dev!
+deno run index.ts --name ""
+Hello, World!
 ```
 
 
