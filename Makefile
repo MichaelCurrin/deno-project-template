@@ -36,3 +36,4 @@ clean:
 build:
 	mkdir -p build
 	deno bundle index.ts build/deno-project-template.js
+	deno compile --unstable -o build/deno-project-template index.ts
