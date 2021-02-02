@@ -17,14 +17,33 @@ Run this command:
 $ make build
 ```
 
-Test it the generated JS file:
+That will generate two files:
+
+- Self-contained ES module: `build/deno-project-template.js`
+- Binary executable: `build/deno-project-template`
+
+
+## Test the build
+
+Test the generated JS file using Deno.
 
 ```sh
-$ deno run build/deno-project-template.js --name deployer
+$ deno run build/deno-project-template.bundle.js --name deployer
 ```
 ```
 Hello, deployer!
 ```
+
+You can load the JS script as a module in the browser. Use one of these approaches, based on the [bundler](https://deno.land/manual/tools/bundler) manual.
+
+```html
+<script type="module" src="deno-project-template.bundle.js"></script>
+
+<script type="module">
+import * as denoProjectTemplate from "deno-project-template.bundle.js";
+</script>
+```
+
 
 Test the generated binary:
 
@@ -37,10 +56,12 @@ Hello, deployer!
 
 These files can be uploaded and attached as an asset on a GitHub Release. They can be downloaded and run by others.
 
-Notes:
+
+
+Limitations:
 
 - Deno does not currently support JS minification yet.
-- You cannot run the JS script with Node or in the browser.
+- You cannot run the JS script with Node.
 
 
 ## Clean
