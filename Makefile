@@ -35,5 +35,5 @@ clean:
 .PHONY: build
 build:
 	mkdir -p build
-	deno bundle index.ts build/deno-project-template.js
+	deno bundle index.ts build/deno-project-template.bundle.js
 	deno compile --unstable -o build/deno-project-template index.ts
