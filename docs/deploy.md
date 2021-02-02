@@ -22,8 +22,12 @@ That will generate two files:
 - Self-contained ES module: `build/deno-project-template.js`
 - Binary executable: `build/deno-project-template`
 
+These files can be uploaded and attached as an asset on a GitHub Release. They can be downloaded and run by others.
 
-## Test the build
+Limitations:
+
+
+## Test the bundled file
 
 Test the generated JS file using Deno.
 
@@ -44,24 +48,24 @@ import * as denoProjectTemplate from "deno-project-template.bundle.js";
 </script>
 ```
 
+Note that if you use anything Deno-specific, it won't be recognized.
 
-Test the generated binary:
+e.g. `Deno.args`, which is intended for the CLI anyway.
+
+- Deno does not currently support JS minification yet.
+- You cannot run the JS script with Node.
+
+
+## Test the binary
+
+Run the executable.
 
 ```sh
-$ deno run build/deno-project-template --name deployer
+$ build/deno-project-template --name deployer
 ```
 ```
 Hello, deployer!
 ```
-
-These files can be uploaded and attached as an asset on a GitHub Release. They can be downloaded and run by others.
-
-
-
-Limitations:
-
-- Deno does not currently support JS minification yet.
-- You cannot run the JS script with Node.
 
 
 ## Clean
