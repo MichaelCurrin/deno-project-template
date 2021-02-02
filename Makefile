@@ -2,7 +2,7 @@ IGNORE = --ignore=build,docs,README.md
 
 default: upgrade
 
-all: upgrade fmt lint test
+all: upgrade fmt lint test build
 
 help:
 	@grep '^[a-z]' Makefile
