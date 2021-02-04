@@ -1,4 +1,4 @@
-IGNORE = --ignore=build,docs,README.md
+IGNORE = --ignore=build,public,docs,README.md
 
 default: upgrade
 
