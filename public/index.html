@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test page</title>
+
+    <script type="module" src="website.bundle.js"></script>
+
+    <script type="module">
+        import { greet }  from "./website2.bundle.js";
+
+        console.log(greet('Inline script'));
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Test page</h1>
+
+    <p>Check the JS console log to see greetings printed.</p>
+</body>
+
+</html>
