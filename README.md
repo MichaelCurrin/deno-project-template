@@ -36,7 +36,7 @@ After installing Deno, you can use the modules in this project.
 This projects comes with a CLI module which can be run like this in the terminal.
 
 ```sh
-$ deno run index.ts --name "friend"
+$ deno run index.ts --config tsconfig.json --name "friend"
 Hello, friend!
 ```
 
