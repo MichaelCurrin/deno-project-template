@@ -1,6 +1,12 @@
 IGNORE = --ignore=build,public,docs,README.md
 CONFIG = --config tsconfig.json
 
+OUT_DIR = build
+BUNDLED := $(OUT_DIR)/deno-project-template.bundle.js
+COMPILED := $(OUT_DIR)/deno-project-template
+
+.PHONY: $(OUT_DIR)
+
 default: upgrade
 
 all: upgrade fmt lint test build build-web
@@ -31,20 +37,19 @@ run:
 
 
 watch:
-	mkdir -p build
-	deno bundle $(CONFIG) --unstable --watch index.ts build/deno-project-template.bundle.js
+	mkdir -p $(OUT_DIR)
+	deno bundle $(CONFIG) --unstable --watch index.ts $(BUNDLED)
 
-.PHONY: build
 build:
-	mkdir -p build
-	deno bundle $(CONFIG) index.ts build/deno-project-template.bundle.js
-	deno compile $(CONFIG) --unstable -o build/deno-project-template index.ts
+	mkdir -p $(OUT_DIR)
+	deno bundle $(CONFIG) index.ts $(BUNDLED)
+	deno compile $(CONFIG) --unstable -o $(COMPILED) index.ts
 
 clean:
-	rm -rf build
+	rm -rf $(OUT_DIR)
 
 
-# For web demo, instead of CLI demo.
+# For web frontend demo.
 
 build-web:
 	deno bundle $(CONFIG) website.ts public/website.bundle.js
