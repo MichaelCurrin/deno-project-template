@@ -32,16 +32,17 @@ See the [Template notes](/docs/template-notes/) section of the docs for an intro
 
 ### Template featurse
 
-Benefits of using this temmplate:
+What's included in this project:
 
 - A basic Deno application, follow conventions in the community.
-- Comes with a CLI app and browser app so you can use either.
+- Two app flows, so you can use either.
     - CLI app - see [index.ts](/index.ts).
     - Browser app - you can compile and distribute as plain JS and load in the sample HTML page - see [website.ts](/website.ts) and (/website.ts).
-- Uses `make` as an easy Deno task runner - see [Makefile](/Makefile) or run `make help` for available tasks.
+- Task running is made easy with `make` - run `make help` for available tasks or see [Makefile](/Makefile) 
 - Documentation is included - see [docs/](/docs/).
 - Unit testing is included - see [lib_test.ts](/lib_test.ts).
 - GitHub Actions CI is included - see workflow in [.github/](/.github/).
+- Additional conveniences - a pre-push hook, an EditorConfig file and a placeholder TypeScript config.
 
 ### Start coding with Deno
 
