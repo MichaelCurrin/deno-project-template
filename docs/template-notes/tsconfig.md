@@ -1,10 +1,13 @@
-# TS Config notes
+# TS config notes
 
 The minimal [tsconfig.json](/tsconfig.md) works fine.
 
-See [TSConfig reference](https://www.typescriptlang.org/tsconfig) in the TS docs.
+See [TSConfig reference](https://www.typescriptlang.org/tsconfig) in the TS
+docs.
 
-You can add more options to it if you need to.
+You can add more options to that, if you need to.
+
+Some examples:
 
 ```json
 {
@@ -21,6 +24,7 @@ You can add more options to it if you need to.
   ]
 }
 ```
+
 ```json
 {
   "include": [
