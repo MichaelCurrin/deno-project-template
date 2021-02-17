@@ -26,16 +26,21 @@ Hello, World!
 
 ## About this template
 
+<!-- TODO: Delete this section on your copy of this template. -->
+
 See the [Template notes](/docs/template-notes/) section of the docs for an intro to Deno and to see some usage examples.
 
 ### Template featurse
 
-- Outline of a basic Deno application.
+Benefits of using this temmplate:
+
+- A basic Deno application, follow conventions in the community.
 - Comes with a CLI app and browser app so you can use either.
     - CLI app - see [index.ts](/index.ts).
     - Browser app - you can compile and distribute as plain JS and load in the sample HTML page - see [website.ts](/website.ts) and (/website.ts).
-- Uses `make` as an easy Deno task runner - see [Makefile](/Makefile) or run `make help`.
+- Uses `make` as an easy Deno task runner - see [Makefile](/Makefile) or run `make help` for available tasks.
 - Documentation is included - see [docs/](/docs/).
+- Unit testing is included - see [lib_test.ts](/lib_test.ts).
 - GitHub Actions CI is included - see workflow in [.github/](/.github/).
 
 ### Start coding with Deno
