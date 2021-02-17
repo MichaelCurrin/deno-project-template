@@ -44,17 +44,18 @@ watch:
 	mkdir -p $(OUT_DIR)
 	deno bundle $(CONFIG) --unstable --watch index.ts $(BUNDLED)
 
+# CLI app.
 build:
 	mkdir -p $(OUT_DIR)
-	# CLI app.
 	deno bundle $(CONFIG) index.ts $(BUNDLED)
 	deno compile $(CONFIG) --unstable -o $(COMPILED) index.ts
 
-clean:
-	rm -rf $(OUT_DIR)
-
-
+# Frontend app.
 build-web:
-	# Frontend app.
+	mkdir -p $(OUT_DIR)
 	deno bundle $(CONFIG) website.ts public/website.bundle.js
 	deno bundle $(CONFIG) website2.ts public/website2.bundle.js
+
+
+clean:
+	rm -rf $(OUT_DIR)
