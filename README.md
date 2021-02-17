@@ -30,7 +30,7 @@ Hello, World!
 
 See the [Template notes](/docs/template-notes/) section of the docs for an intro to Deno and to see some usage examples.
 
-### Template featurse
+### Template features
 
 What's included in this project:
 
