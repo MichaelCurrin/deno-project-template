@@ -4,4 +4,4 @@ import { greet } from "./lib.ts";
 const args = parse(Deno.args);
 const name = args.name || "World";
 
-console.dir(greet(name));
+console.log(greet(name));
