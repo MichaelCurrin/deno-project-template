@@ -17,7 +17,7 @@ help:
 
 
 install:
-	deno cache --reload index.ts
+	deno cache index.ts
 	
 upgrade:
 	deno cache --reload index.ts
