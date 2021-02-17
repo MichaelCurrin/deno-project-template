@@ -5,7 +5,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/deno-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/deno-project-template/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Made with Deno](https://img.shields.io/badge/Deno-1-blue?logo=deno&logoColor=white)](https://deno.land)
+[![Made with Deno](https://img.shields.io/badge/Deno-1.x-blue?logo=deno&logoColor=white)](https://deno.land)
 
 
 ## Start coding with Deno
