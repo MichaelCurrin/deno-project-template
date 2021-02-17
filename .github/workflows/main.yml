@@ -9,16 +9,16 @@ on:
       - main
 
 jobs:
-  test:
+  test-build:
     name: Test and build app
 
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup repo
+      - name: Checkout 🛎
         uses: actions/checkout@v2
 
-      - name: Setup Deno
+      - name: Setup Deno ⚙️ 🦕
         uses: denolib/setup-deno@v2
         with:
           deno-version: v1.x
@@ -26,14 +26,14 @@ jobs:
       - name: Check formatting
         run: make fmt-check
 
-      - name: Lint
+      - name: Lint 🧐
         run: make lint
 
-      - name: Tests
+      - name: Test 🚨
         run: make test
 
-      - name: Build
+      - name: Build CLI app 🏗️
         run: make build
 
-      - name: Build
+      - name: Build web app 🏗️
         run: make build-web
