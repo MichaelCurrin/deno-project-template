@@ -27,7 +27,7 @@ Hello, World!
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Generate-Use_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/deno-project-template/generate)
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/deno-project-template/generate)
 
 </div>
 
