@@ -42,7 +42,11 @@ What's included in this project:
 - Documentation is included - see [docs/](/docs/).
 - Unit testing is included - see [lib_test.ts](/lib_test.ts).
 - GitHub Actions CI is included - see workflow in [.github/](/.github/).
-- Additional conveniences - a pre-push hook, an EditorConfig file and a placeholder TypeScript config.
+- Additional conveniences for development:
+    - A pre-push hook.
+    - An EditorConfig file.
+    - A placeholder TypeScript config.
+    - VS Code configs to prompt installing a Deno extension and then enable it (recommended per project, not globally).
 
 ### Start coding with Deno
 
