@@ -7,14 +7,18 @@ COMPILED := $(OUT_DIR)/deno-project-template
 
 .PHONY: $(OUT_DIR)
 
-default: upgrade
+default: install
 
-all: upgrade fmt lint test build build-web
+all: install fmt lint test build build-web
+
 
 help:
 	@grep '^[a-z]' Makefile
 
 
+install:
+	deno cache --reload index.ts
+	
 upgrade:
 	deno cache --reload index.ts
 
@@ -42,6 +46,7 @@ watch:
 
 build:
 	mkdir -p $(OUT_DIR)
+	# CLI app.
 	deno bundle $(CONFIG) index.ts $(BUNDLED)
 	deno compile $(CONFIG) --unstable -o $(COMPILED) index.ts
 
@@ -49,8 +54,7 @@ clean:
 	rm -rf $(OUT_DIR)
 
 
-# For web frontend demo.
-
 build-web:
+	# Frontend app.
 	deno bundle $(CONFIG) website.ts public/website.bundle.js
 	deno bundle $(CONFIG) website2.ts public/website2.bundle.js
