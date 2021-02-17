@@ -1,6 +1,8 @@
 # Usage
 
-These instructions use `make` - a task runner available on Linux and macOS. If you are on Windows, you'll have to enter the commands directly in the [Makefile](/Makefile) instead.
+These instructions use `make` - a task runner available on Linux and macOS. If
+you are on Windows, you'll have to enter the commands directly in the
+[Makefile](/Makefile) instead.
 
 
 ## Run checks
@@ -39,6 +41,7 @@ The CLI app does a simple greeting.
 ```sh
 $ make run
 ```
+
 ```
 deno run index.ts --name ""
 Hello, World!
@@ -49,6 +52,7 @@ Supply an argument to `make`.
 ```sh
 make run name='Deno dev'
 ```
+
 ```
 deno run index.ts --name "Deno dev"
 Hello, Deno dev!
@@ -70,4 +74,5 @@ Open the browser at a URL like:
 
 - http://localhost:8000
 
-You'll see the two bundles scripts get used. On as an external JS module. And one as an inline JS script which uses the ES Module `import` syntax.
+You'll see the two bundles scripts get used. On as an external JS module. And
+one as an inline JS script which uses the ES Module `import` syntax.
