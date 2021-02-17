@@ -10,20 +10,35 @@
 
 ## Sample usage
 
+Install dependencies and run the Hello, World CLI app - using this one command:
+
 ```sh
 $ deno run index.ts --config tsconfig.json --name "friend"
 Hello, friend!
 ```
 
-Or simply, using `make`:
+Or simply, with `make`:
 
 ```sh
 $ make run
 Hello, World!
 ```
 
+## About this template
 
-## Start coding with Deno
+See the [Template notes](/docs/template-notes/) section of the docs for an intro to Deno and to see some usage examples.
+
+### Template featurse
+
+- Outline of a basic Deno application.
+- Comes with a CLI app and browser app so you can use either.
+    - CLI app - see [index.ts](/index.ts).
+    - Browser app - you can compile and distribute as plain JS and load in the sample HTML page - see [website.ts](/website.ts) and (/website.ts).
+- Uses `make` as an easy Deno task runner - see [Makefile](/Makefile) or run `make help`.
+- Documentation is included - see [docs/](/docs/).
+- GitHub Actions CI is included - see workflow in [.github/](/.github/).
+
+### Start coding with Deno
 
 <div align="center">
 
@@ -39,8 +54,6 @@ Hello, World!
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
-
-See the [Template notes](/docs/template-notes/) section of the docs for an intro to Deno and to see some usage examples.
 
 
 ## License
