@@ -2,25 +2,26 @@ IGNORE = --ignore=build,public,docs,README.md
 CONFIG = --config tsconfig.json
 
 OUT_DIR = build
+.PHONY: $(OUT_DIR)
 BUNDLED := $(OUT_DIR)/deno-project-template.bundle.js
 COMPILED := $(OUT_DIR)/deno-project-template
-
-.PHONY: $(OUT_DIR)
 
 default: install
 
 all: install fmt lint test build build-web
 
 
-help:
+h help:
 	@grep '^[a-z]' Makefile
 
 
 install:
-	deno cache index.ts
-	
+	deno cache deps.ts
+	deno cache test_deps.ts
+
 upgrade:
-	deno cache --reload index.ts
+	deno cache --reload deps.ts
+	deno cache --reload test_deps.ts
 
 
 fmt:
@@ -39,10 +40,10 @@ test:
 run:
 	deno run index.ts $(CONFIG) --name "$(name)"
 
-
 watch:
 	mkdir -p $(OUT_DIR)
 	deno bundle $(CONFIG) --unstable --watch index.ts $(BUNDLED)
+
 
 # CLI app.
 build:
