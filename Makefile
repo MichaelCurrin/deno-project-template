@@ -2,18 +2,23 @@ IGNORE = --ignore=build,public,docs,README.md
 CONFIG = --config tsconfig.json
 
 OUT_DIR = build
-.PHONY: $(OUT_DIR)
 BUNDLED := $(OUT_DIR)/deno-project-template.bundle.js
 COMPILED := $(OUT_DIR)/deno-project-template
 
+.PHONY: hooks $(OUT_DIR)
+
+
 default: install
 
-all: install fmt lint test build build-web
+all: hooks install fmt lint test build build-web
 
 
 h help:
 	@grep '^[a-z]' Makefile
 
+
+hooks:
+	cd .git/hooks && ln -s -f ../../hooks/pre-push pre-push
 
 install:
 	deno cache deps.ts

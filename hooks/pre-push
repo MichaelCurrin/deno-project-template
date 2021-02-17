@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+git pull --rebase || git pull --rebase origin master
+
+make all
