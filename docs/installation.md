@@ -23,13 +23,3 @@ You don't need to install packages yourself. These will be installed when you ru
 ```sh
 $ make install
 ```
-
-If you need to update packages, then change the locked version numbers and run install.
-
-For predicable development and deploys, it is recommended to lock your dependency versions. If you choose not to lock any, you can force installing the latest packages using this:
-
-```sh
-$ make upgrade
-```
-
-You can lock using `@0.87.0`. But `@0.87` syntax doesn't work, like in NPM projects.
