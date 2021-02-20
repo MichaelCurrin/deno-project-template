@@ -30,18 +30,20 @@ Hello, World!
 
 See the [Template notes](/docs/template-notes/) section of the docs for an intro to Deno and to see some usage examples.
 
+If you know how to setup and run a Node project and you want to know the equivalents in Deno, see my [Migrating from Node](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/deno/migrating-from-node.html) guide.
+
 ### Template features
 
-What's included in this project:
+What is included in this project:
 
-- A basic Deno application, follow conventions in the community.
+- A basic Deno application, following structure conventions from the docs and popular packages.
 - Two app flows, so you can use either.
     - CLI app - see [index.ts](/index.ts).
     - Browser app - you can compile and distribute as plain JS and load in the sample HTML page - see [website.ts](/website.ts) and (/website.ts).
-- Task running is made easy with `make` - run `make help` for available tasks or see [Makefile](/Makefile) 
-- Documentation is included - see [docs/](/docs/).
-- Unit testing is included - see [lib_test.ts](/lib_test.ts).
-- GitHub Actions CI is included - see workflow in [.github/](/.github/).
+- Task running - covered with `make` - run `make help` for available tasks or see [Makefile](/Makefile).
+- Documentation - see [docs/](/docs/).
+- Unit testing - see [lib_test.ts](/lib_test.ts).
+- GitHub Actions CI - see workflow in [.github/](/.github/).
 - Additional conveniences for development:
     - A pre-push hook.
     - An EditorConfig file.
