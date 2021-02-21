@@ -1,8 +1,8 @@
 # Usage
 
-These instructions use `make` - a task runner available on Linux and macOS. If
-you are on Windows, you'll have to enter the commands directly in the
-[Makefile](/Makefile) instead.
+This project uses `make` - a task runner available on Linux and macOS. 
+
+If you are on Windows, you'll have to enter the commands directly in your shell, based on the contents of [Makefile](/Makefile). Some commands might need adjusting for PowerShell instead of Bash.
 
 
 ## Run checks
