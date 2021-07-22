@@ -45,23 +45,23 @@ test:
 run:
 	deno run index.ts $(CONFIG) --name "$(name)"
 
-watch:
-	mkdir -p $(OUT_DIR)
-	deno bundle $(CONFIG) --unstable --watch index.ts $(BUNDLED)
-
-
-# CLI app.
-build:
-	mkdir -p $(OUT_DIR)
-	deno bundle $(CONFIG) index.ts $(BUNDLED)
-	deno compile $(CONFIG) --unstable -o $(COMPILED) index.ts
-
-# Frontend app.
-build-web:
-	mkdir -p $(OUT_DIR)
-	deno bundle $(CONFIG) website.ts public/website.bundle.js
-	deno bundle $(CONFIG) website2.ts public/website2.bundle.js
-
 
 clean:
 	rm -rf $(OUT_DIR)
+
+.mk-out:
+	mkdir -p $(OUT_DIR)
+
+watch: .mk-out
+	deno bundle $(CONFIG) --unstable --watch index.ts $(BUNDLED)
+
+# CLI app.
+build: .mk-out
+	deno bundle $(CONFIG) index.ts $(BUNDLED)
+		
+	deno compile $(CONFIG) --unstable -o $(COMPILED) index.ts
+
+# Frontend app.
+build-web: .mk-out
+	deno bundle $(CONFIG) website.ts public/website.bundle.js
+	deno bundle $(CONFIG) website2.ts public/website2.bundle.js
