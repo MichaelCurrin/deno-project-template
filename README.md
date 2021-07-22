@@ -1,4 +1,4 @@
-# Deno Project Template 📦 🦕 ✨
+# Deno Project Template 🦕 📦 ✨
 > Starter template for a new Deno project - including docs and CI
 
 [![Deno CI](https://github.com/MichaelCurrin/deno-project-template/workflows/Deno%20CI/badge.svg)](https://github.com/MichaelCurrin/deno-project-template/actions?query=workflow:"Deno+CI" "GitHub Actions CI")
