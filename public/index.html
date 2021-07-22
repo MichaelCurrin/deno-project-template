@@ -9,17 +9,22 @@
     <title>Deno Project Template</title>
     <meta name="description" content="Demo page">
 
+    <!-- Load using script URL. -->
     <script type="module" src="website.bundle.js"></script>
 
+    <!-- Load using inline JS. -->
     <script type="module">
         import { greet }  from "./website2.bundle.js";
 
-        console.log(greet('Inline script'));
+        const msg = greet('Inline script');
+        console.log(msg);
     </script>
 </head>
 
 <body>
-    <h1>Test page</h1>
+    <h1>Deno frontend test</h1>
+    
+    <p>This page loads two TS modules which have been compiled to plain JS files using Deno.</p>
 
     <p>Check the JS console log to see greetings printed.</p>
 </body>
