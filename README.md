@@ -47,18 +47,20 @@ If you know how to setup and run a Node project and you want to know the equival
 What is included in this project:
 
 - A basic Deno application, following structure conventions from the docs and popular packages.
-- Two app flows, so you can use either.
+- Two app flows, so you can use either in your own project.
     - CLI app - see [index.ts](/index.ts).
-    - Browser app - you can compile and distribute as plain JS and load in the sample HTML page - see [website.ts](/website.ts) and (/website.ts).
+    - Browser app - you can compile and distribute as plain JS and load in the browser. For local development and as a demo, the sample [public/index.html](/public/index.html) loads the bundle forms of the [website.ts](/website.ts) and [website2.ts](/website2.ts) modules.
 - Task running - covered with `make` - run `make help` for available tasks or see [Makefile](/Makefile).
 - Documentation - see [docs/](/docs/).
 - Unit testing - see [lib_test.ts](/lib_test.ts).
-- GitHub Actions CI - see workflow in [.github/](/.github/).
+- GitHub Actions CI - see workflow in [.github/](/.github/) directory.
 - Additional conveniences for development:
-    - A pre-push hook.
-    - An EditorConfig file.
-    - A placeholder TypeScript config.
-    - VS Code configs to prompt installing a Deno extension and then enable it (recommended per project, not globally).
+    - A pre-push [hook](/hooks/).
+    - An [EditorConfig](/.editorconfig) file.
+    - A placeholder [TypeScript config](/.tsconfig).
+    - VS Code [configs](/.vscode).
+        - Extensions config to prompt installing a Deno extension.
+        - Settings config to enable the extension - recommended per project, not globally.
 
 ### Start coding with Deno
 
