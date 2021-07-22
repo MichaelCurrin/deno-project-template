@@ -1,3 +1,4 @@
 import { greet } from "./lib.ts";
 
-console.log(greet("Browser"));
+const msg = greet("Browser");
+console.log(msg);
