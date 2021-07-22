@@ -33,6 +33,13 @@ $ make run
 Hello, World!
 ```
 
+Using the browser demo, if you bundle the scripts and open the test page then you'll see this logged in the browser's JS console:
+
+```
+Hello, Browser!
+Hello, Inline script!
+```
+
 
 ## About this template
 
