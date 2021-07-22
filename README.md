@@ -8,21 +8,31 @@
 [![Made with Deno](https://img.shields.io/badge/Deno-1.x-blue?logo=deno&logoColor=white)](https://deno.land)
 
 
+<div align="center">
+    <a href="https://deno.land" title="Go to Deno homepage">
+        <img src="https://raw.githubusercontent.com/github/explore/master/topics/deno/deno.png"
+             alt="node icon"
+             width="130" height="130" />
+    </a>
+</div>
+
+
 ## Sample usage
 
-Install dependencies and run the Hello, World CLI app - using this one command:
+Use this one command to install dependencies and run the _Hello, World_ CLI app - 
 
-```sh
+```console
 $ deno run index.ts --config tsconfig.json --name "friend"
 Hello, friend!
 ```
 
-Or simply, with `make`:
+Or, using `make`:
 
-```sh
+```console
 $ make run
 Hello, World!
 ```
+
 
 ## About this template
 
