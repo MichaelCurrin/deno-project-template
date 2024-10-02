@@ -26,7 +26,7 @@ $ deno run index.ts --config tsconfig.json --name "friend"
 Hello, friend!
 ```
 
-Or, using `make`:
+Or, using `make` on Linux/macOS:
 
 ```console
 $ make run
@@ -39,6 +39,13 @@ Using the browser demo, if you bundle the scripts and open the test page then yo
 Hello, Browser!
 Hello, Inline script!
 ```
+
+## Resources
+
+Learn more about Deno:
+
+- [Deno](https://michaelcurrin.github.io/dev-resources/resources/javascript/deno/) Dev Resources including tutorials.
+- [Deno](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/deno/) Cheatsheets.
 
 
 ## About this template
